@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+      <a class="navbar-brand">Simple Airbnb</a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn-green" type="search">Search</button>
+        <%= link_to 'Add flat', new_flat_path, class: 'btn-blue'%>
+      </form>
+    </nav>
     <%= yield %>
   </body>
 </html>

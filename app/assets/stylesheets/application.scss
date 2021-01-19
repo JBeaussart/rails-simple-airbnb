@@ -1,0 +1,115 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+* {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.btn-green {
+  border: 1px solid #28A745;
+  padding: 6px 10px;
+  border-radius: 2px;
+  background-color: white;
+  margin-right: 8px;
+  color: #28A745;
+}
+
+.btn-green:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #28A745;
+}
+
+.btn-blue {
+  border: 1px solid #167FFB;
+  padding: 6px 10px;
+  border-radius: 2px;
+}
+
+.btn-blue:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #167FFB;
+}
+
+.card-product {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 2px;
+}
+
+.card-product > img {
+  height: 200px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.card-product h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-product h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+.card-product-infos {
+  background-color: #F8F9FA;
+}
+
+
+.flex-container {
+  width: 70%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.action-product {
+  display: flex;
+  justify-content: space-around;
+  margin: 8px;
+}
+
+.price-person {
+  display: flex;
+  align-items: center;
+}
+
+.price-person h2 {
+  margin-right: 16px;
+}
+
+.info-link {
+  color: #007BFF;
+}
+
+.edit-link {
+  color: #FFC009;
+}
+
+.delete-link {
+  color: #DC3545;
+}
