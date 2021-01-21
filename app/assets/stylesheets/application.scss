@@ -113,3 +113,44 @@
 .delete-link {
   color: #DC3545;
 }
+
+.banner-show {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  top: 55px;
+  z-index: -1;
+}
+
+.bloc-name {
+  background-color: #F8F9FA;
+  width: 350px;
+  position: absolute;
+  top: 250px;
+  left: -300px;
+}
+
+.bloc-description {
+  background-color: #F8F9FA;
+  width: 450px;
+  position: absolute;
+  top: 250px;
+  left: 150px;
+}
+
+.bloc-price {
+  background-color: #F8F9FA;
+  width: 450px;
+  position: absolute;
+  top: 450px;
+  left: 150px;
+}
+
+.edit-btn {
+  position: absolute;
+  width: 350px;
+  position: absolute;
+  top: 450px;
+  left: -300px;
+  font-size: 24px;
+}
