@@ -1,35 +1,20 @@
-<!-- <div class="container">
-  <h1>All our flats</h1>
-  <div class="row">
-    <ul>
-      <% @flats.each do |flat| %>
-      <li class="product-card">
-        <%= link_to flat.name, flat_path(flat) %>
-        <%= link_to "(delete)", flat_path(flat), method: :delete  %>
-      </li>
-      <% end %>
-    </ul>
-  </div>
+<div class="flex-container">
+  <% @flats.each do |flat| %>
+    <div class="card-product">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <div class="card-product-infos">
+      <h1><%= flat.name %></h1>
+      <h2><%= flat.address %></h2>
+      <div class="price-person">
+        <h2><%= "Max #{flat.number_of_guests} guests" %></h2>
+        <h2><%= "#{flat.price_per_night}€"%></h2>
+      </div>
+      </div>
+      <div class="action-product">
+        <h2> <%= link_to "More info", flat_path(flat), :class => "info-link"  %></h2>
+        <h2> <%= link_to 'Edit', edit_flat_path(flat), :class => "edit-link"   %></h2>
+        <h2> <%= link_to "delete", flat_path(flat), method: :delete, :class => "delete-link"   %></h2>
+      </div>
+    </div>
+  <% end %>
 </div>
-
- -->
-    <div class="flex-container">
-      <% @flats.each do |flat| %>
-        <div class="card-product">
-          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-          <div class="card-product-infos">
-          <h1><%= flat.name %></h1>
-          <h2><%= flat.address %></h2>
-          <div class="price-person">
-            <h2><%= "Max #{flat.number_of_guests} guests" %></h2>
-            <h2><%= "#{flat.price_per_night}€"%></h2>
-          </div>
-          </div>
-          <div class="action-product">
-            <h2> <%= link_to "More info", flat_path(flat), :class => "info-link"  %></h2>
-            <h2> <%= link_to 'Edit', edit_flat_path(flat), :class => "edit-link"   %></h2>
-            <h2> <%= link_to "delete", flat_path(flat), method: :delete, :class => "delete-link"   %></h2>
-          </div>
-        </div>
-      <% end %>
-  </div>

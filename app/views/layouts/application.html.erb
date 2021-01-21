@@ -11,10 +11,10 @@
 
   <body>
     <nav class="navbar navbar-light bg-light justify-content-between">
-      <a class="navbar-brand">Simple Airbnb</a>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn-green" type="search">Search</button>
+      <%= link_to 'Simple Airbnb', flats_path %>
+      <form class="form-inline" action="/flats">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="query">
+        <button class="btn-green">Search</button>
         <%= link_to 'Add flat', new_flat_path, class: 'btn-blue'%>
       </form>
     </nav>
